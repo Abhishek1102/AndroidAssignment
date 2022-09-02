@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlagActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cricket"
+            android:textSize="35sp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/iv_indian_flag"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/indian_flag"
+            android:layout_below="@+id/tv_title"/>
+
+        <TextView
+            android:id="@+id/tv_india"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="India"
+            android:textSize="30sp"
+            android:layout_below="@+id/iv_indian_flag"/>
+
+        <ImageView
+            android:id="@+id/iv_australia_flag"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/australia_flag"
+            android:layout_below="@+id/tv_india"/>
+
+        <TextView
+            android:id="@+id/tv_australia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Australia"
+            android:textSize="30sp"
+            android:layout_below="@+id/iv_australia_flag"/>
+
+        <ImageView
+            android:id="@+id/iv_england_flag"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/england_flag"
+            android:layout_below="@+id/tv_australia"/>
+
+        <TextView
+            android:id="@+id/tv_england"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="England"
+            android:textSize="30sp"
+            android:layout_below="@+id/iv_england_flag"/>
+
+        <ImageView
+            android:id="@+id/iv_southafrica_flag"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/sa_flag"
+            android:layout_below="@+id/tv_england"/>
+
+        <TextView
+            android:id="@+id/tv_southafrica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="South Africa"
+            android:textSize="30sp"
+            android:layout_below="@+id/iv_southafrica_flag"/>
+
+        <ImageView
+            android:id="@+id/iv_srilanka_flag"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/sl_flag"
+            android:layout_below="@+id/tv_southafrica"/>
+
+        <TextView
+            android:id="@+id/tv_srilanka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Sri Lanka"
+            android:textSize="30sp"
+            android:layout_below="@+id/iv_srilanka_flag"/>
+        
+    </RelativeLayout>
+
+</ScrollView>
