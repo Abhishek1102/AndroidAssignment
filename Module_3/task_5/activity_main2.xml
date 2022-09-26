@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Screen"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="12dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:layout_below="@+id/edt_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="12dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your mobile no"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:layout_below="@+id/edt_password"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="12dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_Clogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click to login"
+        android:textSize="12sp"
+        android:layout_below="@+id/edt_number"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_marginHorizontal="12dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/tv_Clogin"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:backgroundTint="@color/Blue"
+        android:layout_marginHorizontal="12dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
