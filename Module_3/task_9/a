@@ -1,1 +1,31 @@
-a
+package com.example.myrentalapp
+
+import android.os.Bundle
+import android.widget.FrameLayout
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+
+
+class AuthenticationActivity : AppCompatActivity() {
+
+    lateinit var frame_authentication: FrameLayout
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_authentication)
+
+        frame_authentication = findViewById(R.id.frame_authentication)
+
+
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+        transaction.add(R.id.frame_authentication,LoginFragment(),"LoginFragment").commitAllowingStateLoss()
+        
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frame_authentication, LoginFragment())
+        fragmentTransaction.commit()
+        
+    }
+}
